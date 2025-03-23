@@ -9,7 +9,7 @@ products = [
         "name": "BMW",
     },
     {
-        "price": 30,
+        "price": 50,
         "name": "Škoda",
     }
 ]
@@ -55,8 +55,10 @@ def sum_price():
         sum += product['price']
     print(f"Celková cena všech produktů: {sum}Kč")
 
+
+
 def min_product_price():
-    min_price = min(p['price'] for p in products)
+    min_price = min(product['price'] for product in products)
     result = [
             product for product in products
             if product['price'] == min_price
@@ -67,11 +69,13 @@ def min_product_price():
 
 
 def max_product_price():
-    max_price = products[0]
-    for product in products:
-        if product['price'] > max_price['price']:
-            max_price = product
-    print(f"Nejdražší produkt: {max_price['name']} - {max_price['price']}Kč")
+    max_price = max(product['price'] for product in products)
+    result = [
+            product for product in products
+            if product['price'] == max_price
+    ]
+    for product in result:
+        print(f"Nejlevnější produkt: {product['name']} - {product['price']}Kč")
 
 
 
