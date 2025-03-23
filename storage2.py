@@ -9,7 +9,7 @@ products = [
         "name": "BMW",
     },
     {
-        "price": 50,
+        "price": 70,
         "name": "Škoda",
     }
 ]
@@ -17,7 +17,7 @@ products = [
 
 def print_products():
     for product in products:
-        print(f"Název produktu: {product['name']}, {product['price']}Kč")
+        print(f"Název produktu: {product['name']} - {product['price']}Kč")
 
 
 
