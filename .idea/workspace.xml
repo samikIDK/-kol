@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06b9a5e5-cab5-48d5-967f-6bc2396b68ec" name="Changes" comment="Average price">
+    <list default="true" id="06b9a5e5-cab5-48d5-967f-6bc2396b68ec" name="Changes" comment="tedka už i editovaný produkt jde počítat.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage2.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage2.py" afterDir="false" />
     </list>
@@ -104,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742653454704</updated>
       <workItem from="1742653455927" duration="6553000" />
-      <workItem from="1742660426958" duration="12218000" />
+      <workItem from="1742660426958" duration="17317000" />
     </task>
     <task id="LOCAL-00001" summary="trošku jsem zapomnel komitovat, ale tady je první komit search, sum a exit">
       <option name="closed" value="true" />
@@ -170,7 +171,47 @@
       <option name="project" value="LOCAL" />
       <updated>1742728939335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Editing produktu">
+      <option name="closed" value="true" />
+      <created>1742729463453</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742729463453</updated>
+    </task>
+    <task id="LOCAL-00010" summary="v max price jsem upravil text a u add product jsem změnil kod tak aby fungovalo sum, min a max při přidání nového produktu">
+      <option name="closed" value="true" />
+      <created>1742733520447</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742733520447</updated>
+    </task>
+    <task id="LOCAL-00011" summary="upravil price u škody a u print products jsem dal misto čárky - . Přišlo mi to lepší">
+      <option name="closed" value="true" />
+      <created>1742734085136</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742734085136</updated>
+    </task>
+    <task id="LOCAL-00012" summary="upravil jsem edit product tak aby kdyz zadaš číslo tak pak se vypíše jaký produkt editujes">
+      <option name="closed" value="true" />
+      <created>1742734788995</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742734788995</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tedka už i editovaný produkt jde počítat.">
+      <option name="closed" value="true" />
+      <created>1742735468677</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742735468677</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,9 +225,14 @@
     <MESSAGE value="opravenil jsem max price stejne jako min price předtím" />
     <MESSAGE value="opravil jsem max price stejne jako min price předtím" />
     <MESSAGE value="Average price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Average price" />
+    <MESSAGE value="Editing produktu" />
+    <MESSAGE value="v max price jsem upravil text a u add product jsem změnil kod tak aby fungovalo sum, min a max při přidání nového produktu" />
+    <MESSAGE value="upravil price u škody a u print products jsem dal misto čárky - . Přišlo mi to lepší" />
+    <MESSAGE value="upravil jsem edit product tak aby kdyz zadaš číslo tak pak se vypíše jaký produkt editujes" />
+    <MESSAGE value="tedka už i editovaný produkt jde počítat." />
+    <option name="LAST_COMMIT_MESSAGE" value="tedka už i editovaný produkt jde počítat." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject3$storage2.coverage" NAME="storage2 Coverage Results" MODIFIED="1742728902418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject3$storage2.coverage" NAME="storage2 Coverage Results" MODIFIED="1742737351102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

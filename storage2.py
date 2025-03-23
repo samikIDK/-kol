@@ -20,8 +20,6 @@ def print_products():
         print(f"Název produktu: {product['name']} - {product['price']}Kč")
 
 
-
-
 def add_product():
     product_name = input("Název produktu: ")
     while True:
@@ -29,9 +27,10 @@ def add_product():
             product_price = int(input("Cena: "))
             break
         except ValueError:
-            print("Cena musí být číslo!")
+            print("Musíš zadat číslo!")
 
     products.append({"name": product_name, "price": product_price})
+
 
 def search_product():
     search = input("Co hledáte?: ").lower()
@@ -57,7 +56,6 @@ def sum_price():
     print(f"Celková cena všech produktů: {sum}Kč")
 
 
-
 def min_product_price():
     min_price = min(product['price'] for product in products)
     result = [
@@ -78,15 +76,17 @@ def max_product_price():
     for product in result:
         print(f"Nejdražší produkt: {product['name']} - {product['price']}Kč")
 
+
 def average_price():
     average = sum(product['price'] for product in products)/len(products)
     print(f"Průměrná cena produktů: {average}Kč")
+
 
 def edit_product():
     print_products()
     try:
         index = int(input("Zadej číslo produktu, který chceš upravit(1,2..): ")) - 1
-        print(f"Chces upravit: {products[index]['name']} - {products[index]['price']}")
+        print(f"Chces upravit: {products[index]['name']} - {products[index]['price']}Kč")
         if index < 0 >= len(products):
             print("Neplatné číslo.")
             return
