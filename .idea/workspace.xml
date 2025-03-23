@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06b9a5e5-cab5-48d5-967f-6bc2396b68ec" name="Changes" comment="oprava max a min price">
+    <list default="true" id="06b9a5e5-cab5-48d5-967f-6bc2396b68ec" name="Changes" comment="Average price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage2.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage2.py" afterDir="false" />
     </list>
@@ -57,6 +57,36 @@
       <recent name="C:\Users\Samuel\PythonProject3" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="storage2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/storage2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.storage2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742653454704</updated>
       <workItem from="1742653455927" duration="6553000" />
-      <workItem from="1742660426958" duration="10115000" />
+      <workItem from="1742660426958" duration="12218000" />
     </task>
     <task id="LOCAL-00001" summary="trošku jsem zapomnel komitovat, ale tady je první komit search, sum a exit">
       <option name="closed" value="true" />
@@ -108,7 +138,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742725439840</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="oprava max a min price">
+      <option name="closed" value="true" />
+      <created>1742727335765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742727335765</updated>
+    </task>
+    <task id="LOCAL-00006" summary="opraveno min tak aby to vypisovalo více stejných cen">
+      <option name="closed" value="true" />
+      <created>1742727375452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742727375452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="opravenil jsem max price stejne jako min price předtím">
+      <option name="closed" value="true" />
+      <created>1742727632777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742727632777</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Average price">
+      <option name="closed" value="true" />
+      <created>1742728939335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742728939335</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,9 +180,13 @@
     <MESSAGE value="trošku jsem zapomnel komitovat, ale tady je první komit search, sum a exit" />
     <MESSAGE value="min price a max price" />
     <MESSAGE value="oprava max a min price" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprava max a min price" />
+    <MESSAGE value="opraveno min tak aby to vypisovalo více stejných cen" />
+    <MESSAGE value="opravenil jsem max price stejne jako min price předtím" />
+    <MESSAGE value="opravil jsem max price stejne jako min price předtím" />
+    <MESSAGE value="Average price" />
+    <option name="LAST_COMMIT_MESSAGE" value="Average price" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject3$storage2.coverage" NAME="storage2 Coverage Results" MODIFIED="1742727274837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject3$storage2.coverage" NAME="storage2 Coverage Results" MODIFIED="1742728902418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
