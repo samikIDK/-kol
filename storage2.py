@@ -23,14 +23,15 @@ def print_products():
 
 
 def add_product():
-    product_name = input("Název produktu:")
-    product_price = input("cena:")
-    product2 = {
-        'name': product_name,
-        'price': product_price
-    }
+    product_name = input("Název produktu: ")
+    while True:
+        try:
+            product_price = int(input("Cena: "))
+            break
+        except ValueError:
+            print("Cena musí být číslo!")
 
-    products.append(product2)
+    products.append({"name": product_name, "price": product_price})
 
 def search_product():
     search = input("Co hledáte?: ").lower()
@@ -75,7 +76,7 @@ def max_product_price():
             if product['price'] == max_price
     ]
     for product in result:
-        print(f"Nejlevnější produkt: {product['name']} - {product['price']}Kč")
+        print(f"Nejdražší produkt: {product['name']} - {product['price']}Kč")
 
 def average_price():
     average = sum(product['price'] for product in products)/len(products)
