@@ -86,6 +86,7 @@ def edit_product():
     print_products()
     index = int(input("Zadej číslo produktu který chceš upravit(1,2,..): " ))
     index = index - 1
+    print(f"Chces upravit: {products[index]['name']} - {products[index]['price']}")
     if 0 <= index < len(products):
         new_name = input("Nový název: ")
         new_price = input("Nová cena:")
