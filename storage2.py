@@ -6,6 +6,10 @@ products = [
     {
         "price": 30,
         "name": "BMW",
+    },
+    {
+        "price": 100,
+        "name": "Škoda",
     }
 ]
 
@@ -45,8 +49,21 @@ def sum_price():
         sum += product['price']
     print(f"Celková cena všech produktů: {sum}Kč")
 
-def delete_product():
-    products.name = input("Název produktu:")
+def min_product_price():
+    min_price = products[0]
+    for product in products:
+        if product['price'] < min_price['price']:
+            min_price = product['price']
+    print(f"Nejlevnější produkt: {min_price['name']} - {min_price['price']}Kč")
+
+
+
+def max_product_price():
+    max_price = products[0]
+    for product in products:
+        if product['price'] > max_price['price']:
+            max_price = product['price']
+    print(f"Nejdražší produkt: {max_price['name']} - {max_price['price']}Kč")
 
 
 
@@ -62,9 +79,6 @@ def menu():
     print("7. Průměrná cena")
     print("8. Úprava produktů")
     print("Zadej 9 pokud chceš odejít ze skladu\n")
-
-
-
 
     choice = int(input("Volba: "))
 
@@ -92,13 +106,11 @@ def menu():
         menu()
 
     elif choice == 5:
-        print("Nejlevnější produkt:")
-
+        min_product_price()
         print("")
         menu()
     elif choice == 6:
-        print("Nejdražší produkt:")
-
+        max_product_price()
         print("")
         menu()
     elif choice == 7:
