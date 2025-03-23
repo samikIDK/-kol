@@ -53,7 +53,7 @@ def min_product_price():
     min_price = products[0]
     for product in products:
         if product['price'] < min_price['price']:
-            min_price = product['price']
+            min_price = product
     print(f"Nejlevnější produkt: {min_price['name']} - {min_price['price']}Kč")
 
 
@@ -62,7 +62,7 @@ def max_product_price():
     max_price = products[0]
     for product in products:
         if product['price'] > max_price['price']:
-            max_price = product['price']
+            max_price = product
     print(f"Nejdražší produkt: {max_price['name']} - {max_price['price']}Kč")
 
 
