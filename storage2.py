@@ -43,6 +43,18 @@ def search_product():
     else:
         print("Nic jsem nenašel.")
 
+def search_price():
+    search = input("Co hledáte?: ").lower()
+    result = [
+        product for product in products
+        if search in product['price'].lower()
+    ]
+    if result:
+        for product in result:
+            print(f"Našel jsem: {product['name']}, {product['price']}Kč")
+    else:
+        print("Nic jsem nenašel.")
+
 def sum_price():
     sum = 0
     for product in products:
@@ -95,8 +107,7 @@ def menu():
         menu()
 
     elif choice == 3:
-        print("Hlédání produktu")
-        search_product()
+        search_price()
         print("")
         menu()
 
