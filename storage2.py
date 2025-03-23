@@ -84,17 +84,27 @@ def average_price():
 
 def edit_product():
     print_products()
-    index = int(input("Zadej číslo produktu který chceš upravit(1,2,..): " ))
-    index = index - 1
-    print(f"Chces upravit: {products[index]['name']} - {products[index]['price']}")
-    if 0 <= index < len(products):
-        new_name = input("Nový název: ")
-        new_price = input("Nová cena:")
-        products[index]['name'] = new_name
-        products[index]['price'] = new_price
-        print("Produkt upraven")
-    else:
-        print("Nesprávné číslo")
+    try:
+        index = int(input("Zadej číslo produktu, který chceš upravit(1,2..): ")) - 1
+        print(f"Chces upravit: {products[index]['name']} - {products[index]['price']}")
+        if index < 0 >= len(products):
+            print("Neplatné číslo.")
+            return
+    except ValueError:
+        print("Zadej číslo!")
+        return
+
+    new_name = input("Název nového produktu: ")
+    while True:
+        try:
+            new_price = int(input("Nová cena: "))
+            break
+        except ValueError:
+            print("Zadej číslo!")
+
+    products[index]["name"] = new_name
+    products[index]["price"] = new_price
+    print("Produkt upraven.")
 
 
 def menu():
