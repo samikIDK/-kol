@@ -1,14 +1,15 @@
 products = [
     {
+        "price": 50,
         "name": "Audi",
-        "price": 50
+
     },
     {
         "price": 30,
         "name": "BMW",
     },
     {
-        "price": 100,
+        "price": 30,
         "name": "Škoda",
     }
 ]
@@ -33,27 +34,20 @@ def add_product():
 
 def search_product():
     search = input("Co hledáte?: ").lower()
-    result = [
-        product for product in products
-        if search in product['name'].lower()
-    ]
-    if result:
-        for product in result:
-            print(f"Našel jsem: {product['name']}, {product['price']}Kč")
+    try:
+        price_search = float(search)
+        results = [product for product in products
+                   if product['price'] == price_search]
+    except ValueError:
+        results = [product for product in products
+                   if search in product['name'].lower()]
+
+    if results:
+        for product in results:
+            print(f"Našel jsem: {product['name']} - {product['price']}Kč")
     else:
         print("Nic jsem nenašel.")
 
-def search_price():
-    search = input("Co hledáte?: ").lower()
-    result = [
-        product for product in products
-        if search in product['price'].lower()
-    ]
-    if result:
-        for product in result:
-            print(f"Našel jsem: {product['name']}, {product['price']}Kč")
-    else:
-        print("Nic jsem nenašel.")
 
 def sum_price():
     sum = 0
@@ -62,11 +56,13 @@ def sum_price():
     print(f"Celková cena všech produktů: {sum}Kč")
 
 def min_product_price():
-    min_price = products[0]
-    for product in products:
-        if product['price'] < min_price['price']:
-            min_price = product
-    print(f"Nejlevnější produkt: {min_price['name']} - {min_price['price']}Kč")
+    min_price = min(p['price'] for p in products)
+    result = [
+            product for product in products
+            if product['price'] == min_price
+    ]
+    for product in result:
+        print(f"Nejlevnější produkt: {product['name']} - {product['price']}Kč")
 
 
 
@@ -107,7 +103,7 @@ def menu():
         menu()
 
     elif choice == 3:
-        search_price()
+        search_product()
         print("")
         menu()
 
